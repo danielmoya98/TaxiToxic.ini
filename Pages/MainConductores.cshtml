@@ -523,103 +523,112 @@
     </ul>
 </nav>
 
-<!-- partial -->
-<div class="main-panel">
-    <div class="content-wrapper">
-        <div class="row">
-            <div class="col-lg-12 grid-margin stretch-card">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">Conductores</h4>
-                        <p class="card-description">
-                            <code>Vea todos los conductores disponibles</code>
-                        </p>
-                        <div class="table-responsive">
-                            <table class="table table-striped">
-                                <thead>
-                                <tr>
-                                    <th>Cuentas</th>
-                                    <th>Nombre</th>
-                                    <th>Calificación</th>
-                                    <th>Autos</th>
-                                    <th>Actividad</th>
-                                    <th>Número de Pedidos</th>
-                                    <th>Acciones</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>John Doe</td>
-                                    <td>
-                                        <div class="rating">
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star"></span>
-                                            <span class="fa fa-star"></span>
-                                        </div>
-                                    </td>
-                                    <td>3</td>
-                                    <td>Activo</td>
-                                    <td>25</td>
-                                    <td>
-                                        <!-- Botones de editar y eliminar -->
-                                        <a type="button" asp-page="VerificarCuenta" class="btn btn-primary btn-sm">Editar</a>
-                                        <a type="button" class="btn btn-danger btn-sm">Eliminar</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Jane Smith</td>
-                                    <td>
-                                        <div class="rating">
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star"></span>
-                                            <span class="fa fa-star"></span>
-                                        </div>
-                                    </td>
-                                    <td>2</td>
-                                    <td>Inactivo</td>
-                                    <td>18</td>
-                                    <td>
-                                        <button type="button" class="btn btn-primary btn-sm">Editar</button>
-                                        <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
-                                    </td>
-                                </tr>
-                                <!-- Puedes agregar más filas con datos similares si lo necesitas -->
-                                </tbody>
-                            </table>
+            <!-- partial -->
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="row">
+                        <div class="col-lg-12 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Conductores</h4>
+                                    <p class="card-description">
+                                        <code>Vea todos los conductores disponibles</code>
+                                    </p>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Cuentas</th>
+                                                    <th>Nombre</th>
+                                                    <th>Calificación</th>
+                                                    <th>Autos</th>
+                                                    <th>Actividad</th>
+                                                    <th>Número de Pedidos</th>
+                                                    <th>Acciones</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @if (Model != null && Model.Drivers != null)
+                                                {
+                                                    @foreach (var driver in Model.Drivers)
+                                                    {
+                                                        <tr>
+                                                            <td>@driver.Id_Driver</td>
+                                                            <td>@(driver.FirstName + " " + driver.LastName)</td>
+                                                            <td>
+                                                                <div class="rating">
+                                                                    @{
+                                                                        var random = new Random();
+                                                                        var stars = random.Next(1, 6); // Número aleatorio entre 1 y 5
+                                                                        for (var i = 0; i < stars; i++)
+                                                                        {
+                                                                            <span class="fa fa-star checked"></span>
+                                                                        }
+                                                                        for (var i = stars; i < 5; i++)
+                                                                        {
+                                                                            // <span class="fa fa-star"></span>
+                                                                        }
+                                                                    }
+                                                                </div>
+                                                            </td>
+                                                            <td>2</td>
+                                                            <td>
+                                                                @{
+                                                                    var random2 = new Random();
+                                                                    var isActive = random2.Next(0, 2) == 0; // 50% de probabilidad de estar activo o inactivo
+                                                                    if (isActive)
+                                                                    {
+                                                                        <span class="text-success">Activo</span>
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        <span class="text-danger">Inactivo</span>
+                                                                    }
+                                                                }
+                                                            </td>
+                                                            <td>22</td>
+                                                            <td>
+                                                                <!-- Botones de editar y eliminar con ID del conductor -->
+                                                                <a type="button" asp-page="VerificarCuenta" class="btn btn-primary btn-sm" data-id="@driver.Id_Driver">Editar</a>
+                                                                <a type="button" class="btn btn-danger btn-sm" data-id="@driver.Id_Driver">Eliminar</a>
+                                                            </td>
+                                                        </tr>
+                                                    }
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+
+                                </div>
+                            </div>
                         </div>
-
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 grid-margin stretch-card">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">Line chart</h4>
-                        <canvas id="lineChart"></canvas>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 grid-margin stretch-card">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">Bar chart</h4>
-                        <canvas id="barChart"></canvas>
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
-    </div>
-</div>
+
+                    <div class="row">
+                        <div class="col-lg-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Line chart</h4>
+                                    <canvas id="lineChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Bar chart</h4>
+                                    <canvas id="barChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
 
 
 </div>

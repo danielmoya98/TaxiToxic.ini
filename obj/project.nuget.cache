@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DYdDWPryimQODg6uLRnt5Kwi2hrS8Q2Z/ZVTd/EzbeVdVT05WZU/6WbsPbYK4vJBzmHE/8mFpEAilGFA624zBQ==",
+  "dgSpecHash": "8DxYmAbmtFtmEZuR6Af+Dhlqz9Ze9hc+xf9P8SKMS1wOmKkB6NJJlh/pWc9Ib4YD21lNuzNk7ZFtIyznjelhQw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alienware\\RiderProjects\\TaxiToxic.ini\\TaxiToxic.ini.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\edu79\\Source\\Repos\\TaxiToxic.ini\\TaxiToxic.ini.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\edu79\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
