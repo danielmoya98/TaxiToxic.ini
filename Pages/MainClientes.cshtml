@@ -488,61 +488,35 @@
                                 <p class="card-description"><code>Vea todos los clientes disponibles</code>
                                 </p>
                                 <div class="table-responsive">
-                                    <table class="table table-striped">
-                                        <thead>
-                                        <tr>
-                                            <th>Cuentas</th>
-                                            <th>Nombre</th>
-                                            <th>Calificación</th>
-                                            <th>Ultimo Acceso</th>
-                                            <th>Número de Pedidos</th>
-                                            <th>Acciones</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>John Doe</td>
-                                            <td>
-                                                <!-- Rating bar para la calificación -->
-                                                <div class="rating">
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star"></span>
-                                                    <span class="fa fa-star"></span>
-                                                </div>
-                                            </td>
-                                            <td>2023-12-08 14:30</td>
-                                            <td>25</td>
-                                            <td>
-                                                <!-- Botones de editar y eliminar -->
-                                                <button type="button" class="btn btn-primary btn-sm">Editar</button>
-                                                <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Jane Smith</td>
-                                            <td>
-                                                <div class="rating">
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star"></span>
-                                                    <span class="fa fa-star"></span>
-                                                    <span class="fa fa-star"></span>
-                                                </div>
-                                            </td>
-                                            <td>2023-12-08 12:45</td>
-                                            <td>18</td>
-                                            <td>
-                                                <a type="button" class="btn btn-primary btn-sm" asp-page="VerificarCuentaCliente">Editar</a>
-                                                <a type="button" class="btn btn-danger btn-sm">Eliminar</a>
-                                            </td>
-                                        </tr>
-                                        <!-- Puedes agregar más filas con datos similares si lo necesitas -->
-                                        </tbody>
-                                    </table>
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Nombre</th>
+                                                    <th>Calificación</th>
+                                                    <th>Ultimo Acceso</th>
+                                                    <th>Acciones</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach (var customer in Model.Customers)
+                                                {
+                                                    <tr>
+                                                        <td>@customer.Id_Customer</td>
+                                                        <td>@($"{customer.FirstName} {customer.LastName}")</td>
+                                                        <td>
+                                                            <!-- Aquí puedes agregar tu lógica para mostrar la calificación -->
+                                                        </td>
+                                                        <td>@customer.LastAccess.ToString("yyyy-MM-dd HH:mm")</td>
+                                                        <td>
+                                                            <!-- Botones de editar y eliminar -->
+                                                            <button type="button" class="btn btn-primary btn-sm">Editar</button>
+                                                            <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
+                                                        </td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
                                 </div>
 
                             </div>
