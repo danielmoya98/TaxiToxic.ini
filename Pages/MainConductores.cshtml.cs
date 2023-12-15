@@ -17,20 +17,22 @@ namespace TaxiToxic.ini.Pages
             {
                 try
                 {
-                    HttpResponseMessage response = await httpClient.GetAsync("https://localhost:7293/api/Driver/1"); // Solicita la lista de conductores
+                    HttpResponseMessage response = await httpClient.GetAsync("https://localhost:7293/api/Driver/3");
+
                     if (response.IsSuccessStatusCode)
                     {
                         string apiResponse = await response.Content.ReadAsStringAsync();
-                        Drivers = JsonConvert.DeserializeObject<List<Driver>>(apiResponse); // Convierte la respuesta a una lista de conductores
+                        Driver driver = JsonConvert.DeserializeObject<Driver>(apiResponse);
+                        Drivers = new List<Driver> { driver }; // Envuelve el único conductor en una lista
                     }
                     else
                     {
-                        // Manejar error en caso de que la solicitud no sea exitosa
+                        // Maneja el código de estado no exitoso
                     }
                 }
                 catch (Exception ex)
                 {
-                    // Manejar excepciones
+                    // Maneja la excepción
                 }
             }
         }
