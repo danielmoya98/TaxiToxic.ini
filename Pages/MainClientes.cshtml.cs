@@ -26,12 +26,12 @@ namespace TaxiToxic.ini.Pages
                     }
                     else
                     {
-                        // Maneja el código de estado no exitoso
+
                     }
                 }
                 catch (Exception ex)
                 {
-                    // Maneja la excepción
+
                 }
             }
         }
@@ -45,22 +45,20 @@ namespace TaxiToxic.ini.Pages
 
                     if (response.IsSuccessStatusCode)
                     {
-                        // La eliminación en la base de datos fue exitosa
-                        // Puedes realizar alguna lógica adicional si es necesario
+                        
                     }
                     else
                     {
-                        // Maneja el código de estado no exitoso
+                        
                     }
                 }
             }
             catch (Exception ex)
             {
-                // Maneja la excepción
+                
             }
 
-            // Redirige a alguna otra página después de eliminar el carro
-            return RedirectToPage("/MainClientes"); // Cambia "/MainTaxis" con la ruta de tu página actual
+            return RedirectToPage("/MainClientes"); 
         }
     }
 
