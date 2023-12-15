@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
 using static TaxiToxic.ini.Pages.MainTaxis;
@@ -7,7 +8,7 @@ namespace TaxiToxic.ini.Pages;
 
 public class MainTaxis : PageModel
 {
-    public List<Car> Cars { get; set; }
+    public List<Car> Cars { get; set; } = new List<Car>();
 
     public async Task OnGetAsync()
     {
@@ -33,6 +34,34 @@ public class MainTaxis : PageModel
             }
         }
     }
+    public async Task<IActionResult> OnPostDeleteAsync(int id)
+    {
+        try
+        {
+            using (var httpClient = new HttpClient())
+            {
+                HttpResponseMessage response = await httpClient.DeleteAsync($"https://localhost:7293/api/Cars/{id}");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    // La eliminación en la base de datos fue exitosa
+                    // Puedes realizar alguna lógica adicional si es necesario
+                }
+                else
+                {
+                    // Maneja el código de estado no exitoso
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            // Maneja la excepción
+        }
+
+        // Redirige a alguna otra página después de eliminar el carro
+        return RedirectToPage("/MainTaxis"); // Cambia "/MainTaxis" con la ruta de tu página actual
+    }
+
 
     public class Car
     {
