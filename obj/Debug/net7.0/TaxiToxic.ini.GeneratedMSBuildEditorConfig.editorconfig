@@ -9,89 +9,89 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TaxiToxic.ini
 build_property.RootNamespace = TaxiToxic.ini
-build_property.ProjectDir = C:\Users\antou\OneDrive\Documentos\GitHub\TaxiToxic.ini\
+build_property.ProjectDir = C:\Users\Italo\Documents\GitHub\TaxiToxic.ini\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\antou\OneDrive\Documentos\GitHub\TaxiToxic.ini
+build_property.MSBuildProjectDirectory = C:\Users\Italo\Documents\GitHub\TaxiToxic.ini
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/antou/OneDrive/Documentos/GitHub/TaxiToxic.ini/Pages/Error.cshtml]
+[C:/Users/Italo/Documents/GitHub/TaxiToxic.ini/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antou/OneDrive/Documentos/GitHub/TaxiToxic.ini/Pages/Horarios.cshtml]
+[C:/Users/Italo/Documents/GitHub/TaxiToxic.ini/Pages/Horarios.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9yYXJpb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antou/OneDrive/Documentos/GitHub/TaxiToxic.ini/Pages/Index.cshtml]
+[C:/Users/Italo/Documents/GitHub/TaxiToxic.ini/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antou/OneDrive/Documentos/GitHub/TaxiToxic.ini/Pages/MainClientes.cshtml]
+[C:/Users/Italo/Documents/GitHub/TaxiToxic.ini/Pages/MainClientes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpbkNsaWVudGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antou/OneDrive/Documentos/GitHub/TaxiToxic.ini/Pages/MainConductores.cshtml]
+[C:/Users/Italo/Documents/GitHub/TaxiToxic.ini/Pages/MainConductores.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpbkNvbmR1Y3RvcmVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antou/OneDrive/Documentos/GitHub/TaxiToxic.ini/Pages/MainEstadisticas.cshtml]
+[C:/Users/Italo/Documents/GitHub/TaxiToxic.ini/Pages/MainEstadisticas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpbkVzdGFkaXN0aWNhcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antou/OneDrive/Documentos/GitHub/TaxiToxic.ini/Pages/MainPedidos.cshtml]
+[C:/Users/Italo/Documents/GitHub/TaxiToxic.ini/Pages/MainPedidos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpblBlZGlkb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antou/OneDrive/Documentos/GitHub/TaxiToxic.ini/Pages/MainRutas.cshtml]
+[C:/Users/Italo/Documents/GitHub/TaxiToxic.ini/Pages/MainRutas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpblJ1dGFzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antou/OneDrive/Documentos/GitHub/TaxiToxic.ini/Pages/MainTaxis.cshtml]
+[C:/Users/Italo/Documents/GitHub/TaxiToxic.ini/Pages/MainTaxis.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpblRheGlzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antou/OneDrive/Documentos/GitHub/TaxiToxic.ini/Pages/Politicas.cshtml]
+[C:/Users/Italo/Documents/GitHub/TaxiToxic.ini/Pages/Politicas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9saXRpY2FzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antou/OneDrive/Documentos/GitHub/TaxiToxic.ini/Pages/Privacy.cshtml]
+[C:/Users/Italo/Documents/GitHub/TaxiToxic.ini/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antou/OneDrive/Documentos/GitHub/TaxiToxic.ini/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Italo/Documents/GitHub/TaxiToxic.ini/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antou/OneDrive/Documentos/GitHub/TaxiToxic.ini/Pages/Soporte.cshtml]
+[C:/Users/Italo/Documents/GitHub/TaxiToxic.ini/Pages/Soporte.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29wb3J0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antou/OneDrive/Documentos/GitHub/TaxiToxic.ini/Pages/Tarifas.cshtml]
+[C:/Users/Italo/Documents/GitHub/TaxiToxic.ini/Pages/Tarifas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFyaWZhcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antou/OneDrive/Documentos/GitHub/TaxiToxic.ini/Pages/VerificarCuenta.cshtml]
+[C:/Users/Italo/Documents/GitHub/TaxiToxic.ini/Pages/VerificarCuenta.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVyaWZpY2FyQ3VlbnRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antou/OneDrive/Documentos/GitHub/TaxiToxic.ini/Pages/VerificarCuentaCliente.cshtml]
+[C:/Users/Italo/Documents/GitHub/TaxiToxic.ini/Pages/VerificarCuentaCliente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVyaWZpY2FyQ3VlbnRhQ2xpZW50ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antou/OneDrive/Documentos/GitHub/TaxiToxic.ini/Pages/VerificarTaxis.cshtml]
+[C:/Users/Italo/Documents/GitHub/TaxiToxic.ini/Pages/VerificarTaxis.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVyaWZpY2FyVGF4aXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antou/OneDrive/Documentos/GitHub/TaxiToxic.ini/Pages/_ViewImports.cshtml]
+[C:/Users/Italo/Documents/GitHub/TaxiToxic.ini/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antou/OneDrive/Documentos/GitHub/TaxiToxic.ini/Pages/_ViewStart.cshtml]
+[C:/Users/Italo/Documents/GitHub/TaxiToxic.ini/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antou/OneDrive/Documentos/GitHub/TaxiToxic.ini/Pages/Shared/_Layout.cshtml]
+[C:/Users/Italo/Documents/GitHub/TaxiToxic.ini/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-bnsm3xofpi

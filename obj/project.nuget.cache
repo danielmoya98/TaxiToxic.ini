@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "g5wgFETpmVTC00xGVEjiKOsFgPBNg+v42RYGVAA9NvPeG0P2ufhhekZPqmdYXfYh5z88N+smlUouD5NluEkkrg==",
+  "dgSpecHash": "xTCRYVvYYz9KpTm6hsHUSQCv8VKMwYj2hXtLXDUp65221RRiqdutSAOXkNDSxSUKE0qqze+2G9jtPr1vtlrxoQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\antou\\OneDrive\\Documentos\\GitHub\\TaxiToxic.ini\\TaxiToxic.ini.csproj",
+  "projectFilePath": "C:\\Users\\Italo\\Documents\\GitHub\\TaxiToxic.ini\\TaxiToxic.ini.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\antou\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\Italo\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }
