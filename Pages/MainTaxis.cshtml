@@ -487,52 +487,37 @@
                                 <p class="card-description"><code>Vea todos los Taxis disponibles</code>
                                 </p>
                                 <div class="table-responsive">
-                                    <table class="table table-striped">
-                                        <thead>
-                                        <tr>
-                                            <th>Numero</th>
-                                            <th>Matricula</th>
-                                            <th>Modelo</th>
-                                            <th>Estado</th>
-                                            <th>Color</th>
-                                            <th>Capacidad</th>
-                                            <th>Numero de pedidos</th>
-                                            <th>Acciones</th>
-                                        </tr>
-                                        </thead>
-
-                                        <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>ABC123</td>
-                                            <td>Toyota Corolla</td>
-                                            <td>Disponible</td>
-                                            <td>Blanco</td>
-                                            <td>5</td>
-                                            <td>25</td>
-                                            <td>
-                                                <!-- Botones de eliminar y borrar -->
-                                                <a type="button" asp-page="VerificarTaxis" class="btn btn-danger btn-sm">Editar</a>
-                                                <button type="button" class="btn btn-warning btn-sm">Borrar</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>XYZ789</td>
-                                            <td>Honda Civic</td>
-                                            <td>Ocupado</td>
-                                            <td>Negro</td>
-                                            <td>4</td>
-                                            <td>18</td>
-                                            <td>
-                                                <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
-                                                <button type="button" class="btn btn-warning btn-sm">Borrar</button>
-                                            </td>
-                                        </tr>
-                                        <!-- Puedes agregar más filas con datos similares si lo necesitas -->
-                                        </tbody>
-
-                                    </table>
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Numero</th>
+                                                    <th>Matricula</th>
+                                                    <th>Modelo</th>
+                                                    <th>Estado</th>
+                                                    <th>Color</th>
+                                                    <th>Capacidad</th>
+                                                    <!--<th>Numero de pedidos</th>-->
+                                                    <th>Acciones</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach (var car in Model.Cars)
+                                                {
+                                                    <tr>
+                                                        <td>@car.Id_Car</td>
+                                                        <td>@car.LicensePlate</td>
+                                                        <td>@car.Model</td>
+                                                        <td>@car.Status</td>
+                                                        <td>@car.Color</td>
+                                                        <td>@car.Capacity</td>
+                                                        <td>
+                                                            <a asp-page="VerificarTaxis" class="btn btn-danger btn-sm">Editar</a>
+                                                            <button type="button" class="btn btn-warning btn-sm">Borrar</button>
+                                                        </td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
                                 </div>
 
                             </div>
